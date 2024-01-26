@@ -1,0 +1,19 @@
+﻿@page "/"
+@rendermode InteractiveServer
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<h2>ONE-WAY DATA BINDING</h2>
+<h3>@Message</h3>
+
+<h2>TWO-WAY DATA BINDING</h2>
+<input @bind-value="Message" class="form-control"/>
+<Greetings/>
+
+@code{
+    string Message = "Hello, Welcome to your first Blazor Practicals";
+
+}
